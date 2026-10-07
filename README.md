@@ -1,89 +1,149 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 FinAI — App de Organização de Finanças Pessoais com Vibe Coding & Design Universal
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+> Projeto prático desenvolvido para o desafio **"Criando um APP de Organização de Finanças Pessoais com Vibe Coding"** da plataforma **Digital Innovation One (DIO)**.  
+> Repositório original de referência: [dio-lab-vibe-coding-app-financas](https://github.com/digitalinnovationone/dio-lab-vibe-coding-app-financas)
 
-## ✨ O que é Vibe Coding
+---
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
+## 🚀 Aplicação Publicada (Live Demo)
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+A versão funcional e responsiva gerada no Lovable está publicada e pronta para testes:  
+🔗 **[https://finai-dio.lovable.app](https://finai-dio.lovable.app)**
 
-## 🎯 Desafio
+---
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
+## ✨ O que é Vibe Coding?
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
+**Vibe Coding** é uma abordagem moderna e centrada em intenção para o desenvolvimento de software impulsionada por IA generativa. Em vez de escrever linhas manuais de sintaxe, gerenciar configurações de ambiente e debugar componentes repetitivos, o desenvolvedor assume o papel de **arquiteto e diretor de produto**.
 
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+> *"Você expressa a intenção e as regras da sua ideia de forma clara, e a IA traduz o conceito em uma aplicação funcional e interativa."*
 
-## 🪄 Etapas do Desafio
+Nesse paradigma, o valor técnico migra da memorização de comandos para a **habilidade de especificar requisitos (PRD)**, desenhar fluxos lógicos, guiar ferramentas como **Lovable** ou **Copilot** e avaliar criticamente a experiência de uso.
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
+---
 
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
+## 🎯 Conceito do Projeto & O Problema
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+### O Problema
+A maioria das pessoas abandona o controle financeiro por conta do atrito de uso:
+* Formulários longos e preenchimento burocrático de cada centavo gasto.
+* Falta de compreensão sobre categorias contábeis formais.
+* Interfaces rígidas que causam fadiga cognitiva e desmotivação.
 
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+### A Solução: FinAI
+O **FinAI** elimina essas barreiras permitindo que o usuário gerencie todo o seu dinheiro através de uma conversa fluida em linguagem natural. Ele interpreta gírias e frases cotidianas do português (ex.: *"paguei 30 conto de uber"* ou *"recebi 1200 de salário"*), alimentando automaticamente um painel visual com métricas, metas e relatórios sem que o usuário precise abrir uma única planilha.
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+---
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+## ♿ Design Universal & Acessibilidade (WCAG 2.1 AA)
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+A aplicação foi planejada sob as diretrizes do **Design Universal**, garantindo que qualquer pessoa consiga utilizar o produto com autonomia e sem barreiras:
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
+* **Tipografia Acessível:** Implementação nativa da família tipográfica **Atkinson Hyperlegible**, criada pelo *Braille Institute* para maximizar a distinção entre caracteres semelhantes.
+* **Informação Multimodal:** Dados financeiros nunca dependem exclusivamente de cores: entradas são identificadas com o sinal `+` e ícones ascendentes; saídas contam com o sinal `−` e ícones descendentes[cite: 1, 2, 3].
+* **Tolerância a Falhas (Princípio 5 do Design Universal):** Todo lançamento pelo chat exibe imediatamente um card com o botão **"Desfazer registro"**, permitindo reversão instantânea de qualquer erro com restauração automática de saldo[cite: 1, 3].
+* **Operabilidade e Alvos de Toque:** Botões, campos de entrada e atalhos rápidos com dimensões mínimas de 44x44 px e foco visível para navegação por teclado.
+* **Flexibilidade de Entrada:** Suporte a digitação em texto, atalhos rápidos em chips de 1 clique e botão com microfone simulado para suporte a comandos de voz[cite: 1, 2].
+* **Legibilidade Sem Dependência de Hover:** Gráficos com valores em reais e porcentagens fixadas em texto visível, sem exigir passagem do mouse para consulta[cite: 1, 2, 3].
+
+---
+
+## 📸 Demonstração do Aplicativo e Interações
+
+### 1. Dashboard Inicial
+Visão panorâmica dos cards de resumo com Saldo Disponível de R$ 1.766,00, gráfico de categorias e metas de economia[cite: 2]:
+
+![Dashboard Inicial](./1_home.png)
+
+---
+
+### 2. Conversação em Linguagem Natural com Gírias
+Ao receber o comando informal *"paguei 30 conto de uber"*, a IA categorizou automaticamente o lançamento como **Transporte**, debitou o saldo para R$ 1.736,00 e exibiu o toast de confirmação na tela[cite: 1]:
+
+![Chat Interativo](./3_chat.png)
+
+---
+
+### 3. Mecanismo de Tolerância ao Erro (Desfazer Ação)
+Ao clicar em "Desfazer registro", o débito foi anulado, o saldo retornou a R$ 1.766,00 e o sistema confirmou a reversão via notificação visual[cite: 3]:
+
+![Desfazer Registro](./4_undo.png)
+
+---
+
+## 📄 PRD Final (Prompt Utilizado com a IA no Lovable)
+
+Abaixo está o Documento de Requisitos de Produto (PRD) completo utilizado para guiar a criação do app no Lovable:
+
+```markdown
+# Product Requirements Document (PRD): FinAI - Assistente Conversacional e Inclusivo de Finanças
+
+## 1. Visão Geral & Proposta de Valor
+- Nome do Produto: FinAI
+- Conceito: Aplicação web de gestão financeira pessoal guiada por inteligência artificial conversacional em linguagem natural.
+- Proposta Única de Valor (UVP): "Finanças sem barreiras: controle seus gastos conversando do seu jeito, sem formulários ou termos complicados."
+- Público-Alvo: Amplo e inclusivo — desde iniciantes em educação financeira e idosos até usuários que buscam praticidade e pessoas que utilizam tecnologias assistivas.
+
+## 2. Princípios de Design Universal & Acessibilidade (WCAG 2.1 Nível AA)
+1. Perceptibilidade & Contraste: 
+   - Taxa de contraste mínima de 4.5:1 para textos normais e 3:1 para elementos de interface e gráficos.
+   - Informações nunca dependem exclusivamente de cores (despesas usam cor vermelha acompanhada de sinal de subtração − e ícone de saída).
+2. Operabilidade & Alvos de Toque:
+   - Todos os botões, chips e campos clicáveis devem ter área mínima de toque de 44x44 pixels.
+   - Navegação por teclado com foco visível.
+3. Compreensibilidade & Carga Cognitiva Baixa:
+   - Textos curtos, vocabulário acessível e ausência de jargões técnicos.
+   - Mensagens explicativas e toasts acessíveis.
+4. Tolerância ao Erro:
+   - Ação imediata de reversão ("Desfazer registro") no card de confirmação.
+5. Múltiplas Modalidades de Entrada:
+   - Campo de digitação de texto com botão simulado de comando de voz (microfone) e atalhos rápidos (chips de 1 clique).
+
+## 3. Identidade Visual & Design System
+- Estética: Limpa, organizada e moderna com hierarquia visual clara.
+- Tipografia: Atkinson Hyperlegible.
+- Cores: Fundo Slate/Zinc neutro, verde esmeralda para entradas/metas, vermelho coral para saídas e índigo para o assistente.
+- Componentes: shadcn/ui + Tailwind CSS com ícones Lucide e suporte a tags semânticas ARIA.
+
+## 4. Arquitetura de Telas (Dashboard Unificado)
+- Coluna A (Chat): Entrada multimodal, chips rápidos ("Gastei R$ 20 no café", "Recebi R$ 1.200 de salário"), histórico com cards de confirmação e botão de desfazer.
+- Coluna B (Painel): Cards de resumo (Saldo, Entradas, Saídas), gráfico horizontal de categorias com legendas textuais e porcentagens permanentes, metas com barra de progresso numérica e histórico de movimentações com filtros.
+
+## 5. Simulação de Lógica do Agente (Mock Logic)
+- Compreensão de gírias cotidianas ("conto", "pila", "uber", "remédio").
+- Atualização em tempo real de saldo e gráficos.
+- Mecanismo funcional de reversão de estado ao clicar em "Desfazer".
 ```
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+---
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+## 💡 Reflexão sobre o Processo de Vibe Coding
 
-### 2. Explorando o Lovable na Prática
+### O que funcionou muito bem?
+* **Acurácia do PRD Estruturado:** Detalhar a paleta, os estados visuais e as diretrizes de acessibilidade antes da geração fez o Lovable criar a tela de primeira, eliminando refatorações visuais ou de alinhamento.
+* **Processamento Semântico Fluido:** A IA entendeu expressões informais brasileiras e vinculou as deduções em dinheiro ao recálculo do dashboard de forma instantânea[cite: 1].
+* **Velocidade de Execução:** Toda a concepção, prototipação visual e deploy público foram realizados em questão de minutos.
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+### Desafios e Ajustes
+* **Gestão de Escopo:** Manter o foco no MVP exigiu evitar a inserção precoce de telas de login ou integrações complexas de backend, priorizando a validação da experiência do usuário sem fricção de acesso.
+* **Coexistência de Componentes:** Posicionar o chat conversacional lado a lado com os gráficos analíticos sem causar poluição visual exigiu definir uma hierarquia de duas colunas bem calibrada.
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+### O que aprendi sobre conversar com IAs?
+1. **Especificação é Código:** No ecossistema de Vibe Coding, prompts vagos geram produtos genéricos. Quanto mais rico for o contexto e os critérios de validação entregues à IA, mais próximo de nível sênior será o resultado.
+2. **Acessibilidade se projeta no início:** Incorporar regras do Design Universal e WCAG já no PRD assegura que a arquitetura do código gerado já nasça semântica e inclusiva.
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+---
 
-### 3. Entregando o Desafio na DIO
+## 🛠️ Tecnologias Utilizadas
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+* **Plataforma de Desenvolvimento & Deploy:** [Lovable.dev](https://lovable.dev)
+* **Framework:** React com TypeScript
+* **Estilização & Componentes:** Tailwind CSS, shadcn/ui
+* **Ícones:** Lucide React
+* **Tipografia:** Atkinson Hyperlegible (Braille Institute)
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+---
 
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
+## 👤 Autor e Créditos
 
-## 💬 Conclusão
-
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+Projeto concebido e desenvolvido por **Diego Floriano Costa** como entrega prática para o desafio de projeto da **Digital Innovation One (DIO)**.
