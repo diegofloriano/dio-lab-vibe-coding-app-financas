@@ -40,32 +40,32 @@ O **FinAI** elimina essas barreiras permitindo que o usuário gerencie todo o se
 A aplicação foi planejada sob as diretrizes do **Design Universal**, garantindo que qualquer pessoa consiga utilizar o produto com autonomia e sem barreiras:
 
 * **Tipografia Acessível:** Implementação nativa da família tipográfica **Atkinson Hyperlegible**, criada pelo *Braille Institute* para maximizar a distinção entre caracteres semelhantes.
-* **Informação Multimodal:** Dados financeiros nunca dependem exclusivamente de cores: entradas são identificadas com o sinal `+` e ícones ascendentes; saídas contam com o sinal `−` e ícones descendentes[cite: 1, 2, 3].
-* **Tolerância a Falhas (Princípio 5 do Design Universal):** Todo lançamento pelo chat exibe imediatamente um card com o botão **"Desfazer registro"**, permitindo reversão instantânea de qualquer erro com restauração automática de saldo[cite: 1, 3].
+* **Informação Multimodal:** Dados financeiros nunca dependem exclusivamente de cores: entradas são identificadas com o sinal `+` e ícones ascendentes; saídas contam com o sinal `−` e ícones descendentes.
+* **Tolerância a Falhas (Princípio 5 do Design Universal):** Todo lançamento pelo chat exibe imediatamente um card com o botão **"Desfazer registro"**, permitindo reversão instantânea de qualquer erro com restauração automática de saldo.
 * **Operabilidade e Alvos de Toque:** Botões, campos de entrada e atalhos rápidos com dimensões mínimas de 44x44 px e foco visível para navegação por teclado.
-* **Flexibilidade de Entrada:** Suporte a digitação em texto, atalhos rápidos em chips de 1 clique e botão com microfone simulado para suporte a comandos de voz[cite: 1, 2].
-* **Legibilidade Sem Dependência de Hover:** Gráficos com valores em reais e porcentagens fixadas em texto visível, sem exigir passagem do mouse para consulta[cite: 1, 2, 3].
+* **Flexibilidade de Entrada:** Suporte a digitação em texto, atalhos rápidos em chips de 1 clique e botão com microfone simulado para suporte a comandos de voz].
+* **Legibilidade Sem Dependência de Hover:** Gráficos com valores em reais e porcentagens fixadas em texto visível, sem exigir passagem do mouse para consulta.
 
 ---
 
 ## 📸 Demonstração do Aplicativo e Interações
 
 ### 1. Dashboard Inicial
-Visão panorâmica dos cards de resumo com Saldo Disponível de R$ 1.766,00, gráfico de categorias e metas de economia[cite: 2]:
+Visão panorâmica dos cards de resumo com Saldo Disponível de R$ 1.766,00, gráfico de categorias e metas de economia:
 
 ![Dashboard Inicial](./1_home.png)
 
 ---
 
 ### 2. Conversação em Linguagem Natural com Gírias
-Ao receber o comando informal *"paguei 30 conto de uber"*, a IA categorizou automaticamente o lançamento como **Transporte**, debitou o saldo para R$ 1.736,00 e exibiu o toast de confirmação na tela[cite: 1]:
+Ao receber o comando informal *"paguei 30 conto de uber"*, a IA categorizou automaticamente o lançamento como **Transporte**, debitou o saldo para R$ 1.736,00 e exibiu o toast de confirmação na tela:
 
 ![Chat Interativo](./3_chat.png)
 
 ---
 
 ### 3. Mecanismo de Tolerância ao Erro (Desfazer Ação)
-Ao clicar em "Desfazer registro", o débito foi anulado, o saldo retornou a R$ 1.766,00 e o sistema confirmou a reversão via notificação visual[cite: 3]:
+Ao clicar em "Desfazer registro", o débito foi anulado, o saldo retornou a R$ 1.766,00 e o sistema confirmou a reversão via notificação visual:
 
 ![Desfazer Registro](./4_undo.png)
 
@@ -121,7 +121,7 @@ Abaixo está o Documento de Requisitos de Produto (PRD) completo utilizado para 
 
 ### O que funcionou muito bem?
 * **Acurácia do PRD Estruturado:** Detalhar a paleta, os estados visuais e as diretrizes de acessibilidade antes da geração fez o Lovable criar a tela de primeira, eliminando refatorações visuais ou de alinhamento.
-* **Processamento Semântico Fluido:** A IA entendeu expressões informais brasileiras e vinculou as deduções em dinheiro ao recálculo do dashboard de forma instantânea[cite: 1].
+* **Processamento Semântico Fluido:** A IA entendeu expressões informais brasileiras e vinculou as deduções em dinheiro ao recálculo do dashboard de forma instantânea.
 * **Velocidade de Execução:** Toda a concepção, prototipação visual e deploy público foram realizados em questão de minutos.
 
 ### Desafios e Ajustes
